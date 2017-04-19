@@ -3,12 +3,12 @@ domain: "http://www.devlxin.com"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.devlxin.com" # the base hostname & protocol for your site
 permalink: /:title/
-avatar: http://7xof48.com1.z0.glb.clouddn.com/avatar.jpg
+avatar: http://usercenter.cditv.cn/upload/avatar/71/fe/b3422a3193bc4f19113e.jpg
 about: http://7xof48.com1.z0.glb.clouddn.com/about.jpg
 favicon: http://7xof48.com1.z0.glb.clouddn.com/favicon.png
 basecss: 
 # Theme specific configuration
-title: songroger
+title: devlxin
 description: >
   Hi there, My name is Lixin, usually I use "devlxin" as my ID everywhere.
   I was born and raised in BaZhong China. 
