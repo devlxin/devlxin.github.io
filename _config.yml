@@ -1,35 +1,130 @@
-# Site configuration
-domain: "http://www.devlxin.com"
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.devlxin.com" # the base hostname & protocol for your site
-permalink: /:title/
-avatar: http://usercenter.cditv.cn/upload/avatar/71/fe/b3422a3193bc4f19113e.jpg
-about: http://7xof48.com1.z0.glb.clouddn.com/about.jpg
-favicon: http://7xof48.com1.z0.glb.clouddn.com/favicon.png
-basecss: 
-# Theme specific configuration
-title: devlxin
-description: >
-  Hi there, My name is Lixin, usually I use "devlxin" as my ID everywhere.
-  I was born and raised in BaZhong China. 
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+#
+# ,--------.      ,--.   ,--. ,--.
+# '--.  .--',---.  \  `.'  /,-'  '-.
+#    |  |  | .-. :  .'    \ '-.  .-'
+#    |  |  \   --. /  .'.  \  |  |
+#    `--'   `----''--'   '--' `--'
 
-# Contact and social media links
-# twitter_username: songrogero
-github_username: devlxin
-# facebook_username: song.roger.1
-# instagram_username: songroger198
-# linkedin_username: songroger
+text_color_theme: default #eg: default | dark | forest | ocean | chocolate | orange
+## Base settings ##
+# url:  #the base hostname & protocol for your site e.g. https://www.someone.com
+baseurl: http://www.devlxin.com
+title: devlxin's blog
+description: > #this means to ignore newlines until "nav_lists:"
+  devlxin's Blog
 
-exclude: ['node_modules', 'gulpfile.js', 'package.json']
+nav_lists:
+  - titles:
+      en: About
+      zh: 关于
+      zh-Hans: 关于
+      zh-Hant: 關於
+    url: /about.html
 
-kramdown:
-  input: GFM
+# paths:
+#   base: /
+#   home: /
+#   all:  /all.html
+#   rss:  /feed.xml
 
-# If U enable the comment, edit disqus or duoshuo account of "/_layouts/post.html"
-# before deploy your webpage
-enable_comment: false
+## GitHub repository (if the site is hosted by GitHub) ##
+# repository:  #e.g. someone/someone.github.io
+# repository_tree:  #e.g. master
 
-gems: ['jekyll-paginate']
-# Pagination
-paginate: 5
-paginate_path: /archive/page:num
+## Language & timezone ##
+lang: en #the language of your site, eg: en(English), zh(简体中文), zh-Hans(简体中文), zh-Hant(繁體中文)
+timezone: Asia/Chengdu #see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
+
+## Author & social ##
+author:
+  name: devlxin
+  email: 1050421454@qq.com
+  # facebook:  #your Facebook username
+  # twitter:  #your Twitter username
+  github: devlxin
+  # googleplus:  #your Google+ username
+  # weibo:  #your Weibo username
+  # douban:  #your Douban username
+  # linkedin:  #your Linkedin username
+
+## TOC
+toc:
+  # selectors: 'h1,h2,h3'
+
+## Comment system (Disqus) ##
+disqus:
+  # shortname:  #the Disqus shortname for the site
+
+## Comment system (gitalk) ##
+# please refer to https://github.com/gitalk/gitalk for more info.
+gitalk:
+  # clientID:  #Github Application Client ID
+  # clientSecret:  #Github Application Client Secret
+  # repository:  #Github repo
+  # owner:  #Github repo owner
+  # admin: #Github repo owner and collaborators, only these guys can initialize github issues, IT IS A LIST.
+    # - owner
+
+## Google Analytics ##
+# ga_tracking_id:  #Google analytics id for the site
+
+## Reading quantity (LeanCloud) ##
+leancloud:
+  # app_id:  #LeanCloud App id
+  # app_key:  #LeanCloud App key
+  # app_class:  #LeanCloud App class
+
+# mathjax: true
+# mathjax_autoNumber: true
+# mermaid: true
+# chart: true
+
+## Paginate ##
+paginate: 7
+paginate_path: /blog/page:num
+
+## Post excerpts ##
+excerpt_separator: <!--more-->
+excerpt_type: text # text | html
+
+## Sources ##
+# sources: bootcss #eg: bootcss | unpkg
+
+## Build ##
+markdown: kramdown
+highlighter: rouge
+permalink: date
+
+exclude:
+  - CHANGELOG.md
+  - CHECKLIST.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README-*.md
+  - README.md
+  - gulpfile.js
+  - jekyll-text-theme.gemspec
+  - package-lock.json
+  - package.json
+  - /docs
+  - /node_modules
+  - /screenshots
+  - /test
+  - /vendor
+
+## Plugins ##
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+  - jemoji
+
+## Server ##
+server_url: "0.0.0.0"
