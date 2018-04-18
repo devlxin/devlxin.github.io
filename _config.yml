@@ -19,6 +19,14 @@ title: devlxin's blog
 description: > #this means to ignore newlines until "nav_lists:"
   devlxin's Blog
 
+defaults:
+  -
+    scope:
+      path: "" # 一个空的字符串代表项目中所有的文件
+      type: "posts"
+    values:
+      layout: "default"
+
 nav_lists:
   - titles:
       en: About
@@ -44,10 +52,10 @@ timezone: Asia/Shanghai #see https://en.wikipedia.org/wiki/List_of_tz_database_t
 ## Author & social ##
 author:
   name: devlxin
-  # email:  #your Email address e.g. someone@site.com
+  email: 1050421454@qq.com
   # facebook:  #your Facebook username
   # twitter:  #your Twitter username
-  # github:  #your GitHub username
+  github: devlxin
   # googleplus:  #your Google+ username
   # weibo:  #your Weibo username
   # douban:  #your Douban username
